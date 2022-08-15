@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendence</title>
+<link rel="stylesheet" href="basicPageLayout.css">
+<style>
+
+div.nav+div{
+    clear:none;
+}
+img{
+    margin-left:auto;
+}
+h1{
+    text-align:center;
+    color:maroon;
+}
+.introToAt{
+    margin:auto;
+    text-align:center;
+}
+button#getAttend{
+    color:white;
+    background-color:green;
+    padding:10px;
+    border-radius:10px;
+    border:1px solid green;
+    margin: 10px;
+}
+
+button#getAttend:hover{
+    color:white;
+    background-color:rgb(6, 112, 6);
+    padding:10px;
+    border-radius:10px;
+    border:1px solid green;
+}
+
+
+.details{
+    display:flex;
+    justify-content: space-around;
+    max-width:900px;
+    margin:15px auto;
+}
+
+.footer{
+    margin-top:auto;
+}
+
+</style>
+<script src="/jsfiles/whichPeriod.js"></script>
+</head>
+<body>
+    <div class="welcome">  Attendence WebPage</div>
+    <div class="nav">
+        <div class="navchild menu">
+            <hr>
+            <hr>
+            <hr> 
+        </div>
+        <div class="navchild a"><a href="index.html">Home</a></div>
+        <div class="navchild a"><a href="attendence.html">Attendence</a></div>
+        <div class="navchild a"><a href="statistics.html">Statistics</a></div>
+        <div class="navchild a"><a href="login.html">Login</a></div>
+        <div class="navchild dp"><a href="profile.html"><img src="userProfilePic.png" alt="user profile pic" height="30px" width="30px"></a></div>
+    </div>
+<div class="introToAt">
+
+<h1>Hey buddy click the button</h1>
+<p>To get this periods attendence allow this site to access your location and get your attendence
+    by clicking the button below</p>
+    <br><br>
+    <div class="details">
+        <span>Date: </span> 
+        <span id="date"> </span>
+        
+        <span>Time: </span> 
+        <span id="time"> </span> 
+ 
+        <span>Period: </span>
+         <span id="period"></span>
+
+        <span>Location: </span>
+        <span id="location"></span>
+    </div>
+
+    <button id="getAttend"> Get Attendece</button>
+    <script src="/jsfiles/attendence.js"></script>
+
+
+</div>
+
+    <div class="footer">
+        help <br> <a href="mailto:saikr2005@gmail.com">saikr2005@gmail.com</a>
+    </div>
+
+</body>
+</html>

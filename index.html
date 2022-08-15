@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Websites</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .welcome{
+    color:rgba(47, 105, 24, 0.562);
+    text-align:center;
+    text-shadow:2px 1px 3px mediumseagreen;
+        }
+        .intro{
+            font-family: monospcae;
+            color:rgb(126, 118, 118);
+        }
+        .challenge > h1{
+            color:red;
+            text-align:center;
+            padding:350px auto 0px auto;
+        }
+        #challengeButton{
+            padding:10px;
+            border-radius: 5px;
+            border:2px solid green;
+            margin: 0px auto;
+            display:block;
+            max-width:210px;
+            background-color: rgb(60, 138, 60);
+        }
+        #number{
+            display:none;
+            margin: 20px auto;
+            border: 4px dotted purple;
+            text-align:center;
+            max-width:300px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="title">
+        Sai's Official Website
+    </div>
+    <div class="navtab">   
+            <ul class="navlist" id="navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Academics.html">Academics</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="websites.html">My Websites</a></li>
+            </ul>
+    </div>
+  <!-- <script>
+      var button = document.getElementById('button');
+      button.addEventListener(onclick,displayFleks);
+
+      function displayFleks(){
+          document.getElementById('navlist').style.display = 'flex'
+          console.log('yes')
+      }
+  </script> -->
+    <h1 class="welcome"> Welcome to my website</h1>
+    <p class="intro">
+        Hey there..!! I'm Sai, currently pursuing PUC2 in RGUKT Ongole. based on my PUC2 SEM-1 syllabus I learned html and created this website.  
+    </p>
+
+
+    <br><br>
+    <div class="challenge">
+        <h1 text="red">Only 1% of you can do this!!</h1> <br>
+        <span id="challengeButton" onclick="document.getElementById('number').style.display = 'block'"><b>Click</b> here to see the <b>Challenge</b></span> <br>
+        <div id="number">
+            My mobile number is : <br>
+            <b>2-6.5-2.1-4.3-7.2-6.5-6.1-</b> <br>
+            <b>If you find my number with code</b> <br>
+            Call me if you can
+        </div>
+    </div>
+
+
+
+</body>
+</html>

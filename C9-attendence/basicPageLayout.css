@@ -1,0 +1,94 @@
+body{
+    margin:0px;
+}
+
+
+.welcome{
+    background-color:rgb(176, 183, 187);
+    color:green;
+    padding:3%;
+    text-align: center;
+    font-size:3em;  
+    font-size:300%;
+    margin:0px 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    overflow:hidden;
+}
+.nav{
+    padding:10px;
+    max-width:900px;
+    margin:auto;
+    display:flex;
+    justify-content: left;
+}
+
+.menu{
+    display:none;
+    width:35px;
+}
+.menu hr{
+    background-color:green;
+    size:1px;
+    padding:0.5px;
+}
+
+.nav img{
+    border:2px solid green;
+    border-radius:500px;
+}
+.nav a{
+    text-decoration:none;
+    color:green;
+    padding:10px 20px;
+    text-align:center;
+    font-size:1.3em;
+}
+
+.nav a:hover{
+    color:black;
+    background-color:white;
+    padding:10px 20px;
+}
+.dp{
+    align-self: right;
+    margin-left:auto;
+}
+.footer{
+    background-color:rgba(190, 185, 185, 0.574);
+    border:2px solid green;
+    color:black;
+    text-align:center;    
+    margin:0px 0px 0px 0px;
+    width:100%;    
+    position:static;
+    bottom:0px;
+
+}
+
+.footer a{
+    text-decoration: none;
+    color:black;
+}
+@media screen and (max-width:530px){
+
+    .a{
+        display:none;
+    }
+    .menu{
+        display:block;
+    }
+    *{
+        overflow:hidden;
+        word-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width:250px){
+    *{
+        font-size:90%;
+    }
+    .welcome{
+        font-size:100%;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+<link rel="stylesheet" href="basicPageLayout.css">
+<style>
+        .profilepic img{
+            width:100%;
+            height:100%;
+            border:5px solid green;
+            border-radius:50%;
+            margin:auto;
+            display:block;
+            margin:0px 80px 20px 0px;
+        }
+    div.profilepic{
+        margin:40px auto 10px auto;
+        text-align:center;
+        text-transform: capitalize;
+        border:2px solid green;
+        max-width:400px;
+        padding:1% 3%;
+        border-radius:5px;
+        background-color:#beb9b992;
+        font-size:1.2em;
+        color:black;
+    }
+
+    .profilepic h1{
+        background-color: rgb(208, 203, 203);
+        border:1px solid green;
+        border-radius:5px;
+        padding:5px;
+        color:maroon;
+    }
+
+    .footer{
+        background-color:rgba(190, 185, 185, 0.574);
+        border:2px solid green;
+        color:black;
+        text-align:center;        
+    }
+    a{
+        text-decoration:none;
+        color:black;
+    }
+
+    </style>
+
+</head>
+<body>
+    <div class="welcome">  Attendence WebPage</div>
+    <div class="nav">
+        <div class="navchild menu">
+            <hr>
+            <hr>
+            <hr> 
+        </div>
+        <div class="navchild a"><a href="index.html">Home</a></div>
+        <div class="navchild a"><a href="attendence.html">Attendence</a></div>
+        <div class="navchild a"><a href="statistics.html">Statistics</a></div>
+        <div class="navchild a"><a href="login.html">Login</a></div>
+    </div>
+
+    <div class="profilepic">
+        <h1><span id="userName"></span></h1>
+        <img src="userProfilePic.png" alt="your profile picture">
+        ID: <span id="id"> </span> <br>
+        E-mail: <span id="email"> </span> <br>
+        Phone : <span id="phone"> </span> <br>
+    </div>
+    Edit profile: <input type="file" name="userProfilePic" id="userProfilePic">
+
+    <div class="footer">
+        help <br> <a href="mailto:saikr2005@gmail.com">saikr2005@gmail.com</a>
+    </div>
+
+    <script src="/jsfiles/profile.js"></script>
+
+</body>
+</html>
